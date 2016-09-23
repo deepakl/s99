@@ -5,9 +5,9 @@ import scala.annotation.tailrec
 object P01 {
 
   @tailrec
-  def last[T](input: Seq[T]): Option[T] = input.toList match {
+  def last[T](input: Seq[T]): Option[T] = input match {
     case Nil => None
-    case head :: Nil => Some(head)
-    case head :: tail => last(tail)
+    case head +: Nil => Some(head)
+    case head +: tail => last(tail)
   }
 }
