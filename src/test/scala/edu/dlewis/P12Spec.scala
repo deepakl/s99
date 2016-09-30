@@ -1,8 +1,7 @@
 package edu.dlewis
 
 import org.scalacheck.Prop.forAll
-import org.scalacheck.{Gen, Prop, Properties}
-import org.scalacheck.Prop.{BooleanOperators, forAll}
+import org.scalacheck.{Gen, Properties}
 
 
 object P12Spec extends Properties("P12") {
