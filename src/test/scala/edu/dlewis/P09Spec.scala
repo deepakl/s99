@@ -8,7 +8,6 @@ object P09Spec extends Properties("P09") {
   import edu.dlewis.P09._
 
   property("pack") = forAll { (a: Char, b: Char, c: Char) =>
-    val e = packHead(Seq(a, a, b, b, c, a, a))
-    e == Seq(Seq(a, a), Seq(b, b), Seq(c), Seq(a, a))
+    packHead(Seq(a, a, b, b, c, a, a)) == Seq(Seq(a, a), Seq(b, b), Seq(c), Seq(a, a))
   }
 }
